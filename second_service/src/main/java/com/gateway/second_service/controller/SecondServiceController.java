@@ -1,5 +1,7 @@
 package com.gateway.second_service.controller;
 
+import com.gateway.second_service.service.SecondServiceService;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -14,6 +16,6 @@ public class SecondServiceController {
 
     @RequestMapping("/message")
     public String message() {
-        return "This is the message from Second Service";
+        return "Message from the second service";
     }
 }
